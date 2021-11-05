@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="grid">
+            <div id="div1">
+                <div class="playerScreen">
+                    <h1>Player One</h1>
+                    <h1 id="score1" class="newgame ">0</h1>
+                    <h2 id="p1message" class="newgame" ></h2>
+                </div>
+                <div>
+                    <h1 class="current1 newgame">0</h1>
+                    <h2 class="current1 newgame">Current</h2>
+                </div>
+            </div>
+
+            <div id="div2">
+
+                <div class="playerScreen">
+                    <h1>Player Two</h1>
+                    <h1 id="score2" class="change">0</h1>
+                    <h2 id="p2message" class="change" ></h2>
+                </div>
+
+                <div>
+                    <h1 class="current2 change">0</h1>
+                    <h2 class="current2 change">Current</h2>
+                </div>
+
+            </div>
+
+            <div id="div3">
+                <div id="diceimgbox">
+                    <img id="diceimg" src="" alt="">
+                </div>
+            </div>
+
+            <div id="div4">
+                <div id="button1">
+                    <h1>Roll Dice</h1>
+                </div>
+            </div>
+
+            <div id="div5">
+                <div id="button2">
+                    <h1>Hold</h1>
+                </div>
+            </div>
+
+            <div id="div6">
+                <div id="button3">
+                <h1>New Game</h1>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <audio id="tink" src="sounds/tink.wav"></audio>
+    <script src="twoplayer.js"></script>
+</body>
+
+</html>
