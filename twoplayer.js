@@ -8,6 +8,11 @@ let p2message = document.getElementById("p2message");
 
 
 let diceimg = document.getElementById("diceimg"); // Dice Image
+let holdsound = document.getElementById("holdsound");
+holdsound.volume = 0.3;
+let newsound = document.getElementById("newsound");
+let gameoversound = document.getElementById("gameover");
+gameoversound.volume = 0.4;
 let tink = document.getElementById("tink");
 tink.volume = 0.5;
 
@@ -28,7 +33,7 @@ let highscore = 0;
 
 newGame.addEventListener("click", () => {
     imagebox.style.display = "none"
-    tink.play();
+    newsound.play();
 
     for (var i = 0; i < 4; i++) {
         newgame[i].style.display = "block";
@@ -63,6 +68,10 @@ rollButton.addEventListener("click", () => {
     if (num === 1 && score < 20) {
         diceimg.setAttribute("src", "images/dice1.png");
         score = 0;
+        setTimeout(function() {
+            gameoversound.play();
+          }, 300);
+
         if (change[0].style.display == "none") {
             score1.style.display = "none";
             currentone[0].style.display = "none";
@@ -143,6 +152,9 @@ rollButton.addEventListener("click", () => {
 
 
     if (score >= 21) {
+        setTimeout(function() {
+            gameoversound.play();
+          }, 300);
 
         if (change[0].style.display == "none") {
             p1message.innerText = "YOU_WIN!";
@@ -166,7 +178,7 @@ rollButton.addEventListener("click", () => {
 
 
 hold.addEventListener("click", () => {
-    tink.play();
+    holdsound.play();
     diceimg.style.display = "none";
     imagebox.style.display = "none";
     currentone[0].style.display = "none";

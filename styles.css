@@ -11,12 +11,18 @@ body {
     font-size: 0.75rem;
 }
 
+.underline{
+text-decoration: underline;
+text-underline-offset: 10px;
+}
+
 #container {
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5px;
 }
 
 
@@ -26,8 +32,8 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 2.5px;
-    grid-row-gap: 2.5px;
+    grid-column-gap: 3.5px;
+    grid-row-gap: 8.5px;
     text-align: center;
 }
 
@@ -37,11 +43,14 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #DCDCDC;
-    background-image: url("images/rubber.jpg");
+    background-image: url("images/y-so-serious-white.png");
     background-size: cover;
-    background-blend-mode:screen;
+    background-blend-mode:multiply;
     border-radius: 20px;
     padding-top: 1%;
+    overflow: hidden;
+    box-shadow: 0px 5px  #DCDCDC;
+   
 }
 
 #div2 {
@@ -50,10 +59,12 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #DCDCDC;
-    background-image: url("images/rubber.jpg");
+    background-image: url("images/y-so-serious-white.png");
     background-size: cover;
-    background-blend-mode:screen;
+    background-blend-mode:multiply;
     border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px  #DCDCDC;
    
 }
 
@@ -65,6 +76,7 @@ body {
     background-color: #DCDCDC;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0px 5px  #DCDCDC;
 
 }
 
@@ -76,6 +88,7 @@ body {
     background-color: #24ad49;
     border-radius: 25px;
     overflow: hidden;
+    
 }
 
 #div5 {
@@ -102,10 +115,10 @@ body {
 
 .playerScreen {
     font-family: 'Orbitron', sans-serif;
-    color:white;
+    color:#007600;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(71, 71, 71, 1) 100%);
     box-shadow: 5px 15px 35px grey,
-    -10px -15px 25px white;
+    -5px -10px 25px white;
     border-radius: 15px;
     border-style: solid;
     border-color: black;
@@ -140,6 +153,7 @@ body {
 #button1:hover{
     box-shadow: inset 25px 25px 35px #1f933e,
                 inset -15px -15px 25px #29c754;
+                font-size: 0.65rem;
                
 }
 
@@ -154,6 +168,7 @@ body {
 #button2:hover{
     box-shadow: inset 25px 25px 35px #18919c,
                 inset -15px -15px 25px #20c5d4;
+                font-size: 0.65rem;
 }
 
 #button3 {
@@ -167,6 +182,7 @@ body {
 #button3:hover{
     box-shadow: inset 25px 25px 35px #d23c13,
                 inset -15px -15px 25px #ff5219;
+                font-size: 0.65rem;
 }
 
 .newgame{
